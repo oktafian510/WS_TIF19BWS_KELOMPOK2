@@ -11,7 +11,7 @@ function tambah($data)
     $name = $firstName . ' ' . $lastName;
 
     $query = "INSERT INTO tb_user ( username , password, user_level) VALUES ('$user', '$pass', 'pbc');";
-    $query .= "INSERT INTO `tb_customers` (id, foto, nama, bio, noHp, email_customers, alamat, status, username, gender) VALUES (NULL, 'home.jpg', '$name','-', '$phoneNumber','-', '-', 'Menunggu ferivikasi', '$user', '-');";
+    $query .= "INSERT INTO `tb_customers` (id, foto, nama, bio, noHp, email_customers, alamat, status, username, gender) VALUES (NULL, 'home.jpg', '$name','-', '$phoneNumber','-', '-', 'Menunggu verifikasi', '$user', '-');";
 
 
     $result = mysqli_multi_query($conn, $query);
