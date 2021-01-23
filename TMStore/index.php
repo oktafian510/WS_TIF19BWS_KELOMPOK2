@@ -2,6 +2,7 @@
 require 'function.php';
 
 
+
 $super = query("SELECT * FROM tb_super_promo order by id desc limit 1")[0];
 $contact = query("SELECT * FROM tb_contact order by id desc limit 1")[0];
 
